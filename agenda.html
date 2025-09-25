@@ -48,7 +48,7 @@
               <input class="input" id="fecha" type="date" required>
             </label>
             <label>Hora
-              <input class="input" id="hora" type="time" required>
+              <input class="input" id="hora" type="time" step="1800" required>
             </label>
           </div>
           <label>Nombre y apellido
@@ -62,9 +62,9 @@
           </label>
           <div class="hero-actions" style="margin-top:1rem;">
             <button class="btn btn-primary" type="submit">Confirmar en Google Calendar</button>
-            <a class="btn btn-ghost" target="_blank" rel="noopener" href="https://wa.me/56966056125">Confirmar vía WhatsApp</a>
+            <button class="btn btn-ghost" type="button" id="btnWhatsapp">Confirmar vía WhatsApp</button>
           </div>
-          <p class="helper">Al enviar abriremos Google Calendar con el evento listo y la invitación a <strong>virastorga@gmail.com</strong>. También puedes escribirnos si necesitas asistencia especial.</p>
+          <p class="helper">Al enviar abriremos Google Calendar con el evento listo y la invitación a <strong>virastorga@gmail.com</strong>; asegúrate de guardar y enviar la invitación cuando se abra la página. También puedes escribirnos si necesitas asistencia especial y te responderemos al correo o al número de contacto ingresado.</p>
           <p class="helper"><strong>Horario de atención:</strong> Lunes a sábado, 10:00 a 19:30 hrs. (con agenda previa).</p>
           <p class="helper"><strong>Dirección:</strong> Cochoa 0716, Puente Alto, Santiago.</p>
         </form>
