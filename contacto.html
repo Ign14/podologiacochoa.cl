@@ -1,84 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Podología Cochoa — Cuidado Podológico</title>
-    <link rel="stylesheet" href="css/estilos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Montserrat:wght@700;600&display=swap" rel="stylesheet">
-    <link rel="icon" href="assets/icons/favicon.ico">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto — Podología Cochoa</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/icons/favicon.ico">
 </head>
 <body>
-    
-    <header>
-      <nav class="navbar">
-        <div class="logo">
-          <span class="logo-badge"></span>
-          <span>Podología Cochoa</span>
-        </div>
-        <ul class="nav-links">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="agenda.html">Agenda</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="contacto.html" class="active">Contacto</a></li>
-        </ul>
-        <a class="btn btn-primary" href="agenda.html">Reservar Hora</a>
-      </nav>
-    </header>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <span class="logo-badge"></span>
+        <span>Podología Cochoa</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="agenda.html">Agenda</a></li>
+        <li><a href="nosotros.html">Equipo</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+      </ul>
+      <a class="btn btn-primary" href="agenda.html">Reservar hora</a>
+    </nav>
+  </header>
 
+  <main>
     <section class="section">
-      <h2>Contáctanos</h2>
-      <div class="card" style="max-width:560px;margin:auto">
-        <form action="mailto:virastorga@gmail.com" method="POST" enctype="text/plain" class="form">
-          <label>Nombre
-            <input type="text" name="nombre" required class="input">
-          </label>
-          <label>Email
-            <input type="email" name="email" required class="input">
-          </label>
-          <label>Teléfono
-            <input type="text" name="telefono" class="input" value="+56 9 6605 6125">
-          </label>
-          <label>Mensaje
-            <textarea name="mensaje" rows="4" required class="input"></textarea>
-          </label>
-          <button type="submit" class="btn btn-primary" style="width:100%">Enviar</button>
-        </form>
-        <div style="margin-top:1rem;text-align:center">
-          <p class="small">También por WhatsApp: <a href="https://wa.me/56966056125" target="_blank" rel="noopener">+56 9 6605 6125</a></p>
-          <p class="small">Dirección: Cochoa 0716, Puente Alto, Santiago, Puente Alto, Santiago</p>
+      <div class="section-header fade-in" style="--delay:.05s;">
+        <span class="badge-soft">Estamos para ayudarte</span>
+        <h2>Coordinemos tu atención podológica</h2>
+        <p>Escríbenos para resolver dudas clínicas, coordinar tu tratamiento o recibir orientación previa a tu visita. Respondemos con la cercanía y profesionalismo que nos caracterizan.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="card contact-card fade-in" style="--delay:.12s;">
+          <h3>Formulario de contacto</h3>
+          <form action="mailto:virastorga@gmail.com" method="POST" enctype="text/plain" class="form">
+            <label>Nombre completo
+              <input type="text" name="nombre" required class="input" placeholder="Tu nombre y apellido">
+            </label>
+            <label>Email
+              <input type="email" name="email" required class="input" placeholder="nombre@correo.com">
+            </label>
+            <label>Teléfono
+              <input type="text" name="telefono" class="input" placeholder="+56 9 .... ....">
+            </label>
+            <label>Mensaje
+              <textarea name="mensaje" rows="4" required class="input" placeholder="Cuéntanos cómo podemos ayudarte"></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary" style="width:100%">Enviar consulta</button>
+          </form>
+          <p class="helper">También puedes escribirnos directamente a <a href="mailto:virastorga@gmail.com">virastorga@gmail.com</a> o vía WhatsApp para recibir respuesta rápida.</p>
+        </div>
+        <div class="map-wrap slide-in" style="--delay:.18s;">
+          <iframe title="Ubicación Podología Cochoa" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.508425548889!2d-70.57709642368556!3d-33.611997273341944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c6a27ba56c7d%3A0xfcad2a3aa12af8a!2sCochoa%200716%2C%20Puente%20Alto%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1714780000000!5m2!1ses-419!2scl"></iframe>
         </div>
       </div>
     </section>
-    
-    <footer>
-      <div class="footer">
-        <div>
-          <div class="logo"><span class="logo-badge"></span> <span>Podología Cochoa</span></div>
-          <p class="small">Cuidado podológico con enfoque clínico y humano.</p>
-          <p class="small">© 2025 Podología Cochoa. Todos los derechos reservados.</p>
-        </div>
-        <div>
-          <h4>Contacto</h4>
-          <ul class="small" style="list-style:none;padding-left:0">
-            <li>Email: <a href="mailto:virastorga@gmail.com">virastorga@gmail.com</a></li>
-            <li>Teléfono: <a href="tel:+56966056125">+56 9 6605 6125</a></li>
-            <li>WhatsApp: <a target="_blank" rel="noopener" href="https://wa.me/56966056125">https://wa.me/56966056125</a></li>
-            <li>Dirección: Cochoa 0716, Puente Alto, Santiago, Puente Alto, Santiago</li>
-          </ul>
-        </div>
-        <div>
-          <h4>Horario</h4>
-          <p class="small">Lunes a Sábado, 10:00–19:30 (solo con agenda)</p>
-          <h4>Redes</h4>
-          <p class="small"><a href="https://www.facebook.com/podologiacochoa/?locale=es_LA" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/podologia_cochoa/?hl=es-la" target="_blank" rel="noopener">Instagram</a></p>
-        </div>
-      </div>
-    </footer>
 
-    <script src="js/main.js"></script>
+    <section class="section">
+      <div class="section-header fade-in" style="--delay:.05s;">
+        <span class="badge-soft">Información adicional</span>
+        <h2>Canales de comunicación abiertos</h2>
+        <p>Si requieres un ajuste en tu hora, una urgencia podológica o apoyo post tratamiento, estamos atentos para ayudarte en el menor tiempo posible.</p>
+      </div>
+      <div class="grid-3">
+        <article class="card service-card fade-in" style="--delay:.12s;">
+          <h3>Teléfono y WhatsApp</h3>
+          <p>Llámanos o escríbenos al <a href="https://wa.me/56966056125" target="_blank" rel="noopener">+56 9 6605 6125</a>. Respondemos de lunes a sábado dentro del mismo día.</p>
+        </article>
+        <article class="card service-card fade-in" style="--delay:.18s;">
+          <h3>Correo electrónico</h3>
+          <p>Comparte tus antecedentes médicos o exámenes previos a <a href="mailto:virastorga@gmail.com">virastorga@gmail.com</a> para preparar tu sesión.</p>
+        </article>
+        <article class="card service-card fade-in" style="--delay:.24s;">
+          <h3>Visítanos</h3>
+          <p>Estamos en Cochoa 0716, Puente Alto, Santiago. Contamos con espacios higienizados, climatizados y accesibles.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <div>
+        <div class="logo"><span class="logo-badge"></span> <span>Podología Cochoa</span></div>
+        <p class="small">Clínica podológica con mirada médica, tecnología avanzada y una atención cercana que pone tu bienestar en el centro.</p>
+        <p class="small">© 2025 Podología Cochoa. Todos los derechos reservados.</p>
+      </div>
+      <div>
+        <h4>Contacto directo</h4>
+        <ul>
+          <li>Email: <a href="mailto:virastorga@gmail.com">virastorga@gmail.com</a></li>
+          <li>Teléfono: <a href="tel:+56966056125">+56 9 6605 6125</a></li>
+          <li>WhatsApp: <a target="_blank" rel="noopener" href="https://wa.me/56966056125">Escríbenos ahora</a></li>
+          <li>Dirección: Cochoa 0716, Puente Alto, Santiago</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Horario y redes</h4>
+        <p class="small"><strong>Horario:</strong> Lunes a sábado, 10:00 – 19:30 hrs.</p>
+        <p class="small"><a href="https://www.facebook.com/podologiacochoa/?locale=es_LA" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/podologia_cochoa/?hl=es-la" target="_blank" rel="noopener">Instagram</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

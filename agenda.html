@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Podología Cochoa — Cuidado Podológico</title>
-    <link rel="stylesheet" href="css/estilos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Montserrat:wght@700;600&display=swap" rel="stylesheet">
-    <link rel="icon" href="assets/icons/favicon.ico">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda tu Hora — Podología Cochoa</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/icons/favicon.ico">
 </head>
 <body>
-    
-    <header>
-      <nav class="navbar">
-        <div class="logo">
-          <span class="logo-badge"></span>
-          <span>Podología Cochoa</span>
-        </div>
-        <ul class="nav-links">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="agenda.html" class="active">Agenda</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-        <a class="btn btn-primary" href="agenda.html">Reservar Hora</a>
-      </nav>
-    </header>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <span class="logo-badge"></span>
+        <span>Podología Cochoa</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="agenda.html" class="active">Agenda</a></li>
+        <li><a href="nosotros.html">Equipo</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <a class="btn btn-primary" href="agenda.html">Reservar hora</a>
+    </nav>
+  </header>
 
+  <main>
     <section class="section">
-      <h2>Agenda tu hora</h2>
-      <div class="card" style="max-width:720px;margin:auto">
+      <div class="section-header fade-in" style="--delay:.05s;">
+        <span class="badge-soft">Reserva en línea</span>
+        <h2>Agenda tu evaluación o tratamiento</h2>
+        <p>Selecciona el servicio, fecha y horario que más te acomode. Confirmaremos tu visita con todos los detalles clínicos necesarios para tu atención.</p>
+      </div>
+      <div class="card fade-in" style="max-width:760px;margin:auto;--delay:.12s;">
         <form class="form" onsubmit="abrirEnGoogleCalendar(event)">
           <label>Servicio
             <select id="servicio" required class="input">
@@ -41,7 +43,7 @@
               <option>Onicocriptosis / Uña Encarnada (45 min)</option>
             </select>
           </label>
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:.8rem">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
             <label>Fecha
               <input class="input" id="fecha" type="date" required>
             </label>
@@ -49,51 +51,51 @@
               <input class="input" id="hora" type="time" required>
             </label>
           </div>
-          <label>Tu nombre
-            <input class="input" id="nombre" placeholder="Nombre y Apellido">
+          <label>Nombre y apellido
+            <input class="input" id="nombre" placeholder="Tu nombre completo">
           </label>
-          <label>Teléfono
+          <label>Teléfono de contacto
             <input class="input" id="telefono" placeholder="+56 9 .... ....">
           </label>
-          <label>Notas (opcional)
-            <textarea class="input" id="notas" rows="3" placeholder="Necesidad específica, dolor, alergias, etc."></textarea>
+          <label>Notas clínicas (opcional)
+            <textarea class="input" id="notas" rows="3" placeholder="Indica dolencias, alergias o antecedentes relevantes"></textarea>
           </label>
-          <div class="actions">
+          <div class="hero-actions" style="margin-top:1rem;">
             <button class="btn btn-primary" type="submit">Confirmar en Google Calendar</button>
-            <a class="btn btn-ghost" target="_blank" rel="noopener" href="https://wa.me/56966056125">Confirmar por WhatsApp</a>
+            <a class="btn btn-ghost" target="_blank" rel="noopener" href="https://wa.me/56966056125">Confirmar vía WhatsApp</a>
           </div>
-          <p class="helper">Al confirmar, se abrirá Google Calendar con el evento listo. Invitaremos a <strong>virastorga@gmail.com</strong> automáticamente.</p>
-          <p class="helper"><strong>Horario:</strong> Lunes a Sábado, 10:00–19:30 (solo con agenda)</p>
-          <p class="helper"><strong>Dirección:</strong> Cochoa 0716, Puente Alto, Santiago, Puente Alto, Santiago</p>
+          <p class="helper">Al enviar abriremos Google Calendar con el evento listo y la invitación a <strong>virastorga@gmail.com</strong>. También puedes escribirnos si necesitas asistencia especial.</p>
+          <p class="helper"><strong>Horario de atención:</strong> Lunes a sábado, 10:00 a 19:30 hrs. (con agenda previa).</p>
+          <p class="helper"><strong>Dirección:</strong> Cochoa 0716, Puente Alto, Santiago.</p>
         </form>
       </div>
     </section>
-    
-    <footer>
-      <div class="footer">
-        <div>
-          <div class="logo"><span class="logo-badge"></span> <span>Podología Cochoa</span></div>
-          <p class="small">Cuidado podológico con enfoque clínico y humano.</p>
-          <p class="small">© 2025 Podología Cochoa. Todos los derechos reservados.</p>
-        </div>
-        <div>
-          <h4>Contacto</h4>
-          <ul class="small" style="list-style:none;padding-left:0">
-            <li>Email: <a href="mailto:virastorga@gmail.com">virastorga@gmail.com</a></li>
-            <li>Teléfono: <a href="tel:+56966056125">+56 9 6605 6125</a></li>
-            <li>WhatsApp: <a target="_blank" rel="noopener" href="https://wa.me/56966056125">https://wa.me/56966056125</a></li>
-            <li>Dirección: Cochoa 0716, Puente Alto, Santiago, Puente Alto, Santiago</li>
-          </ul>
-        </div>
-        <div>
-          <h4>Horario</h4>
-          <p class="small">Lunes a Sábado, 10:00–19:30 (solo con agenda)</p>
-          <h4>Redes</h4>
-          <p class="small"><a href="https://www.facebook.com/podologiacochoa/?locale=es_LA" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/podologia_cochoa/?hl=es-la" target="_blank" rel="noopener">Instagram</a></p>
-        </div>
-      </div>
-    </footer>
+  </main>
 
-    <script src="js/main.js"></script>
+  <footer>
+    <div class="footer">
+      <div>
+        <div class="logo"><span class="logo-badge"></span> <span>Podología Cochoa</span></div>
+        <p class="small">Clínica podológica con mirada médica, tecnología avanzada y una atención cercana que pone tu bienestar en el centro.</p>
+        <p class="small">© 2025 Podología Cochoa. Todos los derechos reservados.</p>
+      </div>
+      <div>
+        <h4>Contacto directo</h4>
+        <ul>
+          <li>Email: <a href="mailto:virastorga@gmail.com">virastorga@gmail.com</a></li>
+          <li>Teléfono: <a href="tel:+56966056125">+56 9 6605 6125</a></li>
+          <li>WhatsApp: <a target="_blank" rel="noopener" href="https://wa.me/56966056125">Escríbenos ahora</a></li>
+          <li>Dirección: Cochoa 0716, Puente Alto, Santiago</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Horario y redes</h4>
+        <p class="small"><strong>Horario:</strong> Lunes a sábado, 10:00 – 19:30 hrs.</p>
+        <p class="small"><a href="https://www.facebook.com/podologiacochoa/?locale=es_LA" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/podologia_cochoa/?hl=es-la" target="_blank" rel="noopener">Instagram</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

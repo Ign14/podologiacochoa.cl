@@ -1,77 +1,134 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Podología Cochoa — Cuidado Podológico</title>
-    <link rel="stylesheet" href="css/estilos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Montserrat:wght@700;600&display=swap" rel="stylesheet">
-    <link rel="icon" href="assets/icons/favicon.ico">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios Clínicos — Podología Cochoa</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/icons/favicon.ico">
 </head>
 <body>
-    
-    <header>
-      <nav class="navbar">
-        <div class="logo">
-          <span class="logo-badge"></span>
-          <span>Podología Cochoa</span>
-        </div>
-        <ul class="nav-links">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="servicios.html" class="active">Servicios</a></li>
-          <li><a href="agenda.html">Agenda</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-        <a class="btn btn-primary" href="agenda.html">Reservar Hora</a>
-      </nav>
-    </header>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <span class="logo-badge"></span>
+        <span>Podología Cochoa</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html" class="active">Servicios</a></li>
+        <li><a href="agenda.html">Agenda</a></li>
+        <li><a href="nosotros.html">Equipo</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <a class="btn btn-primary" href="agenda.html">Reservar hora</a>
+    </nav>
+  </header>
 
+  <main>
     <section class="section">
-      <h2>Nuestros Servicios</h2>
+      <div class="section-header fade-in" style="--delay:.05s;">
+        <span class="badge-soft">Tratamientos clínicos</span>
+        <h2>Protocolos diseñados para cada necesidad podológica</h2>
+        <p>Aplicamos criterios médicos, bioseguridad certificada y tecnología de última generación para garantizar resultados seguros, funcionales y estéticos.</p>
+      </div>
       <div class="grid-3">
-        <div class="card">
-          <h3>Evaluación Podológica (30 min)</h3>
-          <p class="small">Anamnesis, evaluación clínica y plan básico de manejo.</p>
+        <article class="card service-card fade-in" style="--delay:.1s;">
+          <span class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="14" cy="14" r="12" stroke="currentColor" stroke-width="2" opacity="0.4"/>
+              <path d="M10 14.5L12.6 17L18 11" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <h3>Evaluación podológica</h3>
+          <p>30 minutos dedicados a anamnesis, examen clínico, identificación de factores de riesgo y diseño del plan terapéutico.</p>
+        </article>
+        <article class="card service-card fade-in" style="--delay:.16s;">
+          <span class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M9 23C9 23 9 21 11.5 17.5C13.2 15.2 11.7 13.3 11.7 11.2C11.7 9.1 13.2 7 14.9 7C16.6 7 18.3 8.6 18.3 10.7C18.3 12.8 17 14.6 17 16.6C17 18.6 18.5 20.8 18.5 23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M10 5.5C11 4.5 13 4 14 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.45"/>
+            </svg>
+          </span>
+          <h3>Tratamiento integral</h3>
+          <p>60 minutos para higiene profunda, fresado y reconstrucción de uñas, deslaminación de callosidades y masaje terapéutico.</p>
+        </article>
+        <article class="card service-card fade-in" style="--delay:.22s;">
+          <span class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M7 18.5C7 13.8 10.6 10 15.2 10C19.8 10 23 13.6 23 18.2C23 22.8 19.4 26 14.8 26" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6.8 7.5L10.2 11M6.8 11L10.2 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.45"/>
+              <path d="M4 18H10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <h3>Control y mantención</h3>
+          <p>40 minutos de seguimiento clínico para mantener resultados, prevenir lesiones y educar sobre autocuidado diario.</p>
+        </article>
+      </div>
+      <ul class="service-list fade-in" style="--delay:.28s;">
+        <li>Onicocriptosis (uña encarnada) con técnicas conservadoras y curación avanzada.</li>
+        <li>Atención a pacientes diabéticos con evaluación vascular y neurológica.</li>
+        <li>Ortesis de silicona personalizadas para alineación digital.</li>
+        <li>Tratamientos para verrugas plantares, micosis, hiperhidrosis y pie de atleta.</li>
+        <li>Podología estética saludable: spa podal, exfoliaciones y terapias hidratantes.</li>
+      </ul>
+      <div class="feature-banner fade-in" style="--delay:.34s;">
+        <div>
+          <h3>Bioseguridad certificada en cada procedimiento</h3>
+          <p>Esterilizamos nuestro instrumental en autoclave clase B, usamos insumos descartables y aplicamos protocolos avalados por la SEREMI de Salud.</p>
         </div>
-        <div class="card">
-          <h3>Tratamiento Completo (60 min)</h3>
-          <p class="small">Aseo podal, corte y fresado de uñas, deslaminación de hiperqueratosis, hidratación.</p>
-        </div>
-        <div class="card">
-          <h3>Control / Mantención (40 min)</h3>
-          <p class="small">Seguimiento para mantener resultados y prevenir molestias.</p>
-        </div>
+        <a class="btn btn-primary" href="agenda.html">Agendar atención</a>
       </div>
     </section>
-    
-    <footer>
-      <div class="footer">
-        <div>
-          <div class="logo"><span class="logo-badge"></span> <span>Podología Cochoa</span></div>
-          <p class="small">Cuidado podológico con enfoque clínico y humano.</p>
-          <p class="small">© 2025 Podología Cochoa. Todos los derechos reservados.</p>
-        </div>
-        <div>
-          <h4>Contacto</h4>
-          <ul class="small" style="list-style:none;padding-left:0">
-            <li>Email: <a href="mailto:virastorga@gmail.com">virastorga@gmail.com</a></li>
-            <li>Teléfono: <a href="tel:+56966056125">+56 9 6605 6125</a></li>
-            <li>WhatsApp: <a target="_blank" rel="noopener" href="https://wa.me/56966056125">https://wa.me/56966056125</a></li>
-            <li>Dirección: Cochoa 0716, Puente Alto, Santiago, Puente Alto, Santiago</li>
-          </ul>
-        </div>
-        <div>
-          <h4>Horario</h4>
-          <p class="small">Lunes a Sábado, 10:00–19:30 (solo con agenda)</p>
-          <h4>Redes</h4>
-          <p class="small"><a href="https://www.facebook.com/podologiacochoa/?locale=es_LA" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/podologia_cochoa/?hl=es-la" target="_blank" rel="noopener">Instagram</a></p>
-        </div>
-      </div>
-    </footer>
 
-    <script src="js/main.js"></script>
+    <section class="section">
+      <div class="section-header fade-in" style="--delay:.05s;">
+        <span class="badge-soft">Programas especializados</span>
+        <h2>Acompañamiento terapéutico y estético continuo</h2>
+        <p>Diseñamos planes que combinan podología clínica, rehabilitación y cosmetología para que tus pies se mantengan sanos y radiantes.</p>
+      </div>
+      <div class="grid-3">
+        <article class="card service-card fade-in" style="--delay:.1s;">
+          <h3>Plan diabético seguro</h3>
+          <p>Evaluaciones periódicas, control de neuropatías, cuidados preventivos y educación en autocuración para reducir riesgos.</p>
+        </article>
+        <article class="card service-card fade-in" style="--delay:.16s;">
+          <h3>Programa deportivo</h3>
+          <p>Diagnóstico biomecánico, manejo de ampollas y traumatismos, y pautas de recuperación para mantener el rendimiento.</p>
+        </article>
+        <article class="card service-card fade-in" style="--delay:.22s;">
+          <h3>Wellness & spa podal</h3>
+          <p>Sesiones de bienestar con exfoliación, aromaterapia y tratamientos hidratantes que complementan tu cuidado clínico.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <div>
+        <div class="logo"><span class="logo-badge"></span> <span>Podología Cochoa</span></div>
+        <p class="small">Clínica podológica con mirada médica, tecnología avanzada y una atención cercana que pone tu bienestar en el centro.</p>
+        <p class="small">© 2025 Podología Cochoa. Todos los derechos reservados.</p>
+      </div>
+      <div>
+        <h4>Contacto directo</h4>
+        <ul>
+          <li>Email: <a href="mailto:virastorga@gmail.com">virastorga@gmail.com</a></li>
+          <li>Teléfono: <a href="tel:+56966056125">+56 9 6605 6125</a></li>
+          <li>WhatsApp: <a target="_blank" rel="noopener" href="https://wa.me/56966056125">Escríbenos ahora</a></li>
+          <li>Dirección: Cochoa 0716, Puente Alto, Santiago</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Horario y redes</h4>
+        <p class="small"><strong>Horario:</strong> Lunes a sábado, 10:00 – 19:30 hrs.</p>
+        <p class="small"><a href="https://www.facebook.com/podologiacochoa/?locale=es_LA" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/podologia_cochoa/?hl=es-la" target="_blank" rel="noopener">Instagram</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
