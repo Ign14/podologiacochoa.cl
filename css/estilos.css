@@ -439,6 +439,7 @@ header {
   color: var(--color-turquoise);
   font-size: 1.6rem;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.6);
+  margin: 0 auto;
 }
 
 .service-list {
@@ -507,13 +508,15 @@ header {
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.5rem;
+  justify-items: center;
 }
 
 .team-card {
   text-align: center;
   padding-top: 2.5rem;
+  width: 100%;
 }
 
 .team-avatar {
@@ -797,8 +800,7 @@ footer .small {
 }
 
 @media (max-width: 900px) {
-  .grid-3,
-  .team-grid {
+  .grid-3 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -838,8 +840,7 @@ footer .small {
 }
 
 @media (max-width: 520px) {
-  .grid-3,
-  .team-grid {
+  .grid-3 {
     grid-template-columns: 1fr;
   }
 

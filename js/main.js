@@ -1,18 +1,23 @@
 // JS base — sitio Podología Cochoa
 // Función simple para abrir un evento prellenado en Google Calendar desde la página Agenda.
 function q(s){return document.querySelector(s)}
+
+function obtenerDatosFormulario(){
+  const servicio = q('#servicio')?.value || 'Atención Podológica';
+  const nombre = q('#nombre')?.value || '';
+  const tel = q('#telefono')?.value || '';
+  const notas = q('#notas')?.value || '';
+  const fecha = q('#fecha')?.value || '';
+  const hora = q('#hora')?.value || '';
+  return {servicio, nombre, tel, notas, fecha, hora};
+}
 function fmtDateBlock(dt){ // YYYYMMDDTHHMMSSZ (UTC)
   const z = new Date(dt).toISOString().replace(/[-:]/g,'').replace('.000','');
   return z.substring(0,15)+'Z';
 }
 function abrirEnGoogleCalendar(e){
   e?.preventDefault?.();
-  const servicio = q('#servicio')?.value || 'Atención Podológica';
-  const nombre = q('#nombre')?.value || '';
-  const tel = q('#telefono')?.value || '';
-  const notas = q('#notas')?.value || '';
-  const fecha = q('#fecha')?.value;      // YYYY-MM-DD
-  const hora = q('#hora')?.value;        // HH:MM
+  const {servicio, nombre, tel, notas, fecha, hora} = obtenerDatosFormulario();
 
   if(!fecha || !hora){ alert('Selecciona fecha y hora'); return; }
 
@@ -43,3 +48,36 @@ function abrirEnGoogleCalendar(e){
   const url = 'https://calendar.google.com/calendar/render?' + params.toString();
   window.open(url, '_blank');
 }
+
+function confirmarViaWhatsApp(){
+  const {servicio, nombre, tel, notas, fecha, hora} = obtenerDatosFormulario();
+
+  if(!fecha || !hora){ alert('Selecciona fecha y hora'); return; }
+
+  const fechaHora = new Date(`${fecha}T${hora}`);
+  const fechaHumana = new Intl.DateTimeFormat('es-CL', { dateStyle: 'long' }).format(fechaHora);
+  const horaHumana = hora.slice(0,5);
+
+  const partes = [
+    'Hola, quiero confirmar una cita en Podología Cochoa.',
+    '',
+    `Servicio: ${servicio}`,
+    `Fecha: ${fechaHumana}`,
+    `Hora: ${horaHumana} hrs`,
+  ];
+  if(nombre){ partes.push(`Nombre: ${nombre}`); }
+  if(tel){ partes.push(`Contacto: ${tel}`); }
+  if(notas){ partes.push(`Notas clínicas: ${notas}`); }
+  partes.push('', 'Por favor confirmar la cita. ¡Gracias!');
+
+  const mensaje = partes.join('\n');
+  const url = 'https://wa.me/56966056125?text=' + encodeURIComponent(mensaje);
+  window.open(url, '_blank');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const btnWhatsapp = q('#btnWhatsapp');
+  if(btnWhatsapp){
+    btnWhatsapp.addEventListener('click', confirmarViaWhatsApp);
+  }
+});
