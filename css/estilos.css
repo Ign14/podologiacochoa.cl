@@ -101,6 +101,7 @@ header {
 
 .logo-image {
   height: var(--logo-height);
+  height: 46px;
   width: auto;
   display: block;
   border-radius: 0;
@@ -835,6 +836,7 @@ textarea:focus {
 
 .footer > div:first-child .logo-image {
   height: var(--logo-height);
+  height: 46px;
 }
 
 footer {
@@ -1000,6 +1002,11 @@ footer .small {
 
   .footer > div:first-child .logo-image {
     height: var(--logo-height);
+    height: 44px;
+  }
+
+  .footer > div:first-child .logo-image {
+    height: 44px;
   }
 
   .nav-links {
@@ -1036,6 +1043,12 @@ footer .small {
 
   .footer > div:first-child .logo-image {
     height: var(--logo-height);
+
+    height: 41px;
+  }
+
+  .footer > div:first-child .logo-image {
+    height: 41px;
   }
 
   .hero-highlights li {
