@@ -19,6 +19,8 @@
   --gradient-soft: linear-gradient(135deg, rgba(45, 197, 201, 0.16), rgba(57, 217, 138, 0.08));
   --gradient-bg: linear-gradient(135deg, #effafc 0%, #f4fffb 45%, #e7fbfe 100%);
   --transition-base: all 0.35s ease;
+  --primary-button-height: calc((0.7rem * 2) + 0.98rem);
+  --logo-height: calc(var(--primary-button-height) + 5px);
 }
 
 * {
@@ -98,7 +100,7 @@ header {
 }
 
 .logo-image {
-  height: 72px;
+  height: var(--logo-height);
   width: auto;
   display: block;
   border-radius: 0;
@@ -832,7 +834,7 @@ textarea:focus {
 }
 
 .footer > div:first-child .logo-image {
-  height: 72px;
+  height: var(--logo-height);
 }
 
 footer {
@@ -993,11 +995,11 @@ footer .small {
   }
 
   .logo-image {
-    height: 54px;
+    height: var(--logo-height);
   }
 
   .footer > div:first-child .logo-image {
-    height: 54px;
+    height: var(--logo-height);
   }
 
   .nav-links {
@@ -1029,11 +1031,11 @@ footer .small {
   }
 
   .logo-image {
-    height: 48px;
+    height: var(--logo-height);
   }
 
   .footer > div:first-child .logo-image {
-    height: 48px;
+    height: var(--logo-height);
   }
 
   .hero-highlights li {
