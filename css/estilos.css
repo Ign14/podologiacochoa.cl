@@ -20,7 +20,7 @@
   --gradient-bg: linear-gradient(135deg, #effafc 0%, #f4fffb 45%, #e7fbfe 100%);
   --transition-base: all 0.35s ease;
   --primary-button-height: calc((0.7rem * 2) + 0.98rem);
-  --logo-height: calc(var(--primary-button-height) + 5px);
+  --logo-height: var(--primary-button-height);
 }
 
 * {
@@ -101,7 +101,6 @@ header {
 
 .logo-image {
   height: var(--logo-height);
-  height: 46px;
   width: auto;
   display: block;
   border-radius: 0;
@@ -836,7 +835,6 @@ textarea:focus {
 
 .footer > div:first-child .logo-image {
   height: var(--logo-height);
-  height: 46px;
 }
 
 footer {
@@ -1002,11 +1000,6 @@ footer .small {
 
   .footer > div:first-child .logo-image {
     height: var(--logo-height);
-    height: 44px;
-  }
-
-  .footer > div:first-child .logo-image {
-    height: 44px;
   }
 
   .nav-links {
@@ -1043,12 +1036,6 @@ footer .small {
 
   .footer > div:first-child .logo-image {
     height: var(--logo-height);
-
-    height: 41px;
-  }
-
-  .footer > div:first-child .logo-image {
-    height: 41px;
   }
 
   .hero-highlights li {
