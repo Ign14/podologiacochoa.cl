@@ -105,11 +105,6 @@ header {
   filter: drop-shadow(0 0 18px rgba(45, 197, 201, 0.35));
 }
 
-.logo-text {
-  display: inline-block;
-  line-height: 1;
-}
-
 .nav-links {
   list-style: none;
   display: flex;
@@ -392,6 +387,44 @@ header {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.8rem;
+}
+
+.summary-card {
+  gap: 0.75rem;
+}
+
+.summary-card h3 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--color-dark);
+}
+
+.summary-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.55rem;
+  color: var(--color-muted);
+  font-size: 0.96rem;
+}
+
+.summary-list li {
+  position: relative;
+  padding-left: 1.3rem;
+}
+
+.summary-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-turquoise);
+  box-shadow: 0 0 0 3px rgba(45, 197, 201, 0.18);
 }
 
 .card {
@@ -788,6 +821,20 @@ textarea:focus {
   text-align: left;
 }
 
+.footer > div:first-child {
+  text-align: center;
+  justify-items: center;
+}
+
+.footer > div:first-child .logo {
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.footer > div:first-child .logo-image {
+  height: 80px;
+}
+
 footer {
   background: linear-gradient(140deg, #12303a 0%, #1c4553 65%, #12303a 100%);
   color: rgba(255, 255, 255, 0.9);
@@ -949,6 +996,10 @@ footer .small {
     height: 46px;
   }
 
+  .footer > div:first-child .logo-image {
+    height: 68px;
+  }
+
   .nav-links {
     order: 3;
     flex-wrap: wrap;
@@ -979,6 +1030,10 @@ footer .small {
 
   .logo-image {
     height: 42px;
+  }
+
+  .footer > div:first-child .logo-image {
+    height: 60px;
   }
 
   .hero-highlights li {
